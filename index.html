@@ -511,7 +511,17 @@ color: #ffffff; /* Hover text color */
                 <div class="circular-figure2">
                 </div>
         </div>
+    <script>
+            let downloadButton = document.getElementById('download-button');
     
+            downloadButton.addEventListener('click', function() {
+                // Replace 'document.pdf' with the actual path to your document
+                let link = document.createElement('a');
+                link.href = 'Resume.pdf';
+                link.download = 'Resume.pdf';
+                link.click();
+            });
+        </script>
     <script src="main.js"></script>
   </body>
 </html>
